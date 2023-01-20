@@ -18,7 +18,7 @@ json = {
 			"email": "taina_dawson6646@softball.com",
 			"url": "http://jr.com",
 			"description": "eva easter restrict instances gem waves editorials nobody story reality eagles stay california line cds finds fit actors allergy guns",
-			"verified": false,
+			"verified": False,
 			"salary": 57905
 		},
 		{
@@ -39,7 +39,7 @@ json = {
 			"email": "alexis83@closes.com",
 			"url": "http://www.gmc.com",
 			"description": "e awful downloadable deer diy cite corpus bizarre em infection franchise gel management many token chronicle gym amended contest buried",
-			"verified": true,
+			"verified": True,
 			"salary": 46238
 		},
 		{
@@ -60,7 +60,7 @@ json = {
 			"email": "olenebey200@gmail.com",
 			"url": "http://www.tape.com",
 			"description": "eyed diego tin members papers source advantages sensor ice delivery premiere rally grew ntsc portions sure corp offering exposed lt",
-			"verified": true,
+			"verified": True,
 			"salary": 51379
 		},
 		{
@@ -81,7 +81,7 @@ json = {
 			"email": "stephainetilley64@hotmail.com",
 			"url": "http://www.cop.com",
 			"description": "ciao shakira disney dts ongoing puppy database over unfortunately transit rotary investor scholarships accept contacting permit finish merry mel deemed",
-			"verified": true,
+			"verified": True,
 			"salary": 13806
 		},
 		{
@@ -102,7 +102,7 @@ json = {
 			"email": "mirtagunn@gmail.com",
 			"url": "https://www.setting.com",
 			"description": "flashers enclosure editor protected ce latina begins entrepreneurs bi vbulletin ci groundwater timer said kissing zope cool uri nodes joy",
-			"verified": true,
+			"verified": True,
 			"salary": 12860
 		}
 	]

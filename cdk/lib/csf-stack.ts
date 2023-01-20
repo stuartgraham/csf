@@ -80,6 +80,13 @@ export class CsfStackUsEast1 extends cdk.Stack {
       exportName: 'CsfDomainName',
     });
 
+  }
+}
+
+export class CsfStackEuWest1 extends cdk.Stack {
+  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
     //API 
 
     // Lambda Function - Test
@@ -95,6 +102,6 @@ export class CsfStackUsEast1 extends cdk.Stack {
     testResponseFunction.addFunctionUrl({
       authType: lambda.FunctionUrlAuthType.NONE,
     });
-    
+
   }
 }
