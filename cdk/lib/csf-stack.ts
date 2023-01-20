@@ -5,7 +5,7 @@ import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
-
+import * as lambda from 'aws-cdk-lib/aws-lambda';
 
 export class CsfStackUsEast1 extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -80,5 +80,21 @@ export class CsfStackUsEast1 extends cdk.Stack {
       exportName: 'CsfDomainName',
     });
 
+    //API 
+
+    // Lambda Function - Test
+    const testResponseFunction = new lambda.Function(this, 'testResponseFunction', {
+      code: lambda.Code.fromAsset(path.join(__dirname, '../lambda/test')),
+      handler: 'main.handler',
+      runtime: lambda.Runtime.PYTHON_3_9,
+      timeout: cdk.Duration.seconds(30),
+      architecture: lambda.Architecture.ARM_64,
+    });
+
+    // Function URL
+    testResponseFunction.addFunctionUrl({
+      authType: lambda.FunctionUrlAuthType.NONE,
+    });
+    
   }
 }
